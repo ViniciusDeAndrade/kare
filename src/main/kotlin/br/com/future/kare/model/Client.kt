@@ -1,4 +1,4 @@
-package br.com.future.kare
+package br.com.future.kare.model
 
 import javax.persistence.*
 
