@@ -1,4 +1,4 @@
-package br.com.future.kare.config
+package br.com.future.kare.config.security
 
 
 import org.springframework.context.annotation.Configuration

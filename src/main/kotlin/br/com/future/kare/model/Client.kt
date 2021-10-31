@@ -15,10 +15,10 @@ data class Client (
     val id: Long = 0,
 
     @Column(name = "nome")
-    val name: String,
+    val name: String? = "",
 
     @Column(name = "cpf", unique = true)
-    val cpf: String,
+    val cpf: String? = " ",
 
     @Column(name = "email", unique = true)
     val email: String,
@@ -53,9 +53,9 @@ data class Client (
 }
 
 fun Client.toDomain() = ClientDomain(
-    name = name,
-    email = email,
-    cpf = cpf,
+    name = name ?: "",
+    email = email ?: "",
+    cpf = cpf ?: "",
     address = address.let {
         AddressDomain(
             street = it!!.street,

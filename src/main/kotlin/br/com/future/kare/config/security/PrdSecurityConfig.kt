@@ -1,4 +1,4 @@
-package br.com.future.kare.config
+package br.com.future.kare.config.security
 
 //import br.com.sign.repository.ClientRepository
 import org.springframework.context.annotation.Bean
