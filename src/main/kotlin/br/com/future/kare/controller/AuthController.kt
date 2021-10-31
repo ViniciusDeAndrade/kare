@@ -5,6 +5,7 @@ import br.com.future.kare.dto.TokenDTO
 import br.com.future.kare.form.LoginForm
 import br.com.future.kare.form.convert
 import br.com.future.kare.service.ClientService
+import org.springframework.context.annotation.Profile
 import org.springframework.http.ResponseEntity
 import org.springframework.security.authentication.AuthenticationManager
 import org.springframework.security.core.AuthenticationException
@@ -16,6 +17,7 @@ import javax.validation.Valid
 
 @RestController
 @RequestMapping("/auth")
+@Profile("prd")
 class AuthController (
     private val authManager: AuthenticationManager,
     private val tokenService: TokenService,

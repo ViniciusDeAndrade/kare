@@ -8,9 +8,11 @@ import br.com.future.kare.form.LoginForm
 import br.com.future.kare.model.Client
 import br.com.future.kare.utils.encode
 import br.com.sign.exceptions.ApplicationException
+import org.springframework.stereotype.Service
 import org.springframework.transaction.annotation.Transactional
 import kotlin.jvm.Throws
 
+@Service
 class ClientService(
     private val clientRepository: ClientRepository
 ) : IClientService {
